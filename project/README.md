@@ -1,4 +1,4 @@
-# flutterhackathon_firecode
+# Flutter
 
 A new Flutter project.
 
