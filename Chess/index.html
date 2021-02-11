@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satranç Tahtası</title>
+    <link rel="stylesheet" href="chess.css">
+    
+</head>
+<body>
+    <table class="chess-board">
+        <tbody>
+            <tr>
+                <th></th>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+                <th>d</th>
+                <th>e</th>
+                <th>f</th>
+                <th>g</th>
+                <th>h</th>
+            </tr>
+            <tr>
+                <th>8</th>
+                <td class="light" onclick="giveCoordinate('a',8)"></td>
+                <td class="dark" onclick="giveCoordinate('b',8)"></td>
+                <td class="light" onclick="giveCoordinate('c',8)"></td>
+                <td class="dark" onclick="giveCoordinate('d',8)"></td>
+                <td class="light" onclick="giveCoordinate('e',8)"></td>
+                <td class="dark" onclick="giveCoordinate('f',8)"></td>
+                <td class="light" onclick="giveCoordinate('g',8)"></td>
+                <td class="dark" onclick="giveCoordinate('h',8)"></td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td class="dark" onclick="giveCoordinate('a',7)"></td>
+                <td class="light" onclick="giveCoordinate('b',7)"></td>
+                <td class="dark" onclick="giveCoordinate('c',7)"></td>
+                <td class="light" onclick="giveCoordinate('d',7)"></td>
+                <td class="dark" onclick="giveCoordinate('e',7)"></td>
+                <td class="light" onclick="giveCoordinate('f',7)"></td>
+                <td class="dark" onclick="giveCoordinate('g',7)"></td>
+                <td class="light" onclick="giveCoordinate('h',7)"></td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td class="light" onclick="giveCoordinate('a',6)"></td>
+                <td class="dark" onclick="giveCoordinate('b',6)"></td>
+                <td class="light" onclick="giveCoordinate('c',6)"></td>
+                <td class="dark" onclick="giveCoordinate('d',6)"></td>
+                <td class="light" onclick="giveCoordinate('e',6)"></td>
+                <td class="dark" onclick="giveCoordinate('f',6)"></td>
+                <td class="light" onclick="giveCoordinate('g',6)"></td>
+                <td class="dark" onclick="giveCoordinate('h',6)"></td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td class="dark" onclick="giveCoordinate('a',5)"></td>
+                <td class="light" onclick="giveCoordinate('b',5)"></td>
+                <td class="dark" onclick="giveCoordinate('c',5)"></td>
+                <td class="light" onclick="giveCoordinate('d',5)"></td>
+                <td class="dark" onclick="giveCoordinate('e',5)"></td>
+                <td class="light" onclick="giveCoordinate('f',5)"></td>
+                <td class="dark" onclick="giveCoordinate('g',5)"></td>
+                <td class="light" onclick="giveCoordinate('h',5)"></td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td class="light" onclick="giveCoordinate('a',4)"></td>
+                <td class="dark" onclick="giveCoordinate('b',4)"></td>
+                <td class="light" onclick="giveCoordinate('c',4)"></td>
+                <td class="dark" onclick="giveCoordinate('d',4)"></td>
+                <td class="light" onclick="giveCoordinate('e',4)"></td>
+                <td class="dark" onclick="giveCoordinate('f',4)"></td>
+                <td class="light" onclick="giveCoordinate('g',4)"></td>
+                <td class="dark" onclick="giveCoordinate('h',4)"></td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td class="dark" onclick="giveCoordinate('a',3)"></td>
+                <td class="light" onclick="giveCoordinate('b',3)"></td>
+                <td class="dark" onclick="giveCoordinate('c',3)"></td>
+                <td class="light" onclick="giveCoordinate('d',3)"></td>
+                <td class="dark" onclick="giveCoordinate('e',3)"></td>
+                <td class="light" onclick="giveCoordinate('f',3)"></td>
+                <td class="dark" onclick="giveCoordinate('g',3)"></td>
+                <td class="light" onclick="giveCoordinate('h',3)"></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td class="light" onclick="giveCoordinate('a',2)"></td>
+                <td class="dark" onclick="giveCoordinate('b',2)"></td>
+                <td class="light" onclick="giveCoordinate('c',2)"></td>
+                <td class="dark" onclick="giveCoordinate('d',2)"></td>
+                <td class="light" onclick="giveCoordinate('e',2)"></td>
+                <td class="dark" onclick="giveCoordinate('f',2)"></td>
+                <td class="light" onclick="giveCoordinate('g',2)"></td>
+                <td class="dark" onclick="giveCoordinate('h',2)"></td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td class="dark" onclick="giveCoordinate('a',1)"></td>
+                <td class="light" onclick="giveCoordinate('b',1)"></td>
+                <td class="dark" onclick="giveCoordinate('c',1)"></td>
+                <td class="light" onclick="giveCoordinate('d',1)"></td>
+                <td class="dark" onclick="giveCoordinate('e',1)"></td>
+                <td class="light" onclick="giveCoordinate('f',1)"></td>
+                <td class="dark" onclick="giveCoordinate('g',1)"></td>
+                <td class="light" onclick="giveCoordinate('h',1)"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="Box"></div>
+    <script>
+        function giveCoordinate(a,b) {
+            document.getElementById("Box").innerHTML = a+b
+        }     
+        </script>
+    
+</body>
+</html>
